@@ -1,0 +1,57 @@
+@import "../../styles/responsive";
+
+.places {
+    width: 100%;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 0 4rem;
+
+        
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        color: var(--green);
+        span{
+            color: var(--black);
+        }
+    }
+
+    &__select {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 24rem;
+        justify-content: space-between;
+        border-bottom: 1px solid #000000;
+        padding: 4px 15px;
+        align-self: center;
+        h5{
+            color: #706D6D;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        select{
+            border: 0 none;
+            color: #000000;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            padding: 0 .5rem;
+        }
+    }
+    @media (max-width: $mobileLarge){
+        &__header {
+            flex-wrap: wrap;
+        }
+
+        &__select {
+            margin-top: 1rem;
+        } 
+    }
+}

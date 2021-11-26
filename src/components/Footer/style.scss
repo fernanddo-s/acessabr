@@ -1,0 +1,63 @@
+@import "../../styles/responsive";
+
+.footer {
+    width: 100%;
+    
+    &__container {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+
+       p {
+           width: 95%;
+       }
+
+       
+    }
+
+    &__section {
+        padding: 4rem 0;
+        a{
+            color: #0070C1;
+            &:hover{
+                color: var(--blue);
+            }
+        }
+
+        &--first {
+            background-color: var(--lightGreen);
+            color: var(--black);
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 1rem;
+        }
+
+        &--second {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background-color: var(--green);
+            color: #ffffff;
+            padding: 1rem;
+            small{
+                display: block;
+                font-weight: 400;
+                width: 100%;
+            }
+        }
+    }
+    .button {
+        background-color: #DAE8FC;
+        padding: .5rem;
+        border-radius: .4rem;
+        align-self: flex-end;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    }
+
+    @media (max-width: $mobileSmall){
+        p{
+            font-size: 1.5rem !important;
+        }
+       
+    }
+}
+
